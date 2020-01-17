@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+html, body {
+  position: relative;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover, a:active {
+  color: goldenrod;
+}
+
+body {
+  background: url("../img/design/vintage-wallpaper.png");
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+header img {
+  height: 80px;
+  margin: 0 auto;
+}
+
+header ul li {
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+header ul li:last-of-type {
+  margin: 5px 0 10px;
+}
+
+main {
+  margin: 25px auto;
+  width: 800px;
+}
+
+main p {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=cookies.css.map */
