@@ -99,8 +99,8 @@ input[type=button] {
   color: white;
   font-size: 20px;
   border: 3px solid white;
-  -webkit-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+  -webkit-transition: 0.3s border ease;
+  transition: 0.3s border ease;
 }
 
 input[type=button]:hover {
