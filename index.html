@@ -1,57 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script src="js/generator.min.js"></script>
-    <script data-ad-client="ca-pub-3909897055849045" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      data-ad-client="ca-pub-3909897055849045"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
     <title>RNG - Random Number Generator</title>
 
-    <link rel="shortcut icon" href="https://img.icons8.com/nolan/64/123.png" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/nolan/64/123.png"
+      type="image/x-icon"
+    />
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body onload="predefinedValues();">
     <header>
-        <img src="./img/james-no-cap.png" alt="Logo">
-        <ul>
-            <li><a href="./index.html">Number Generator</a></li>
-             <li><a href="./cookies.html">Cookies</a></li>
-        </ul>
+      <img src="./img/james-no-cap.png" alt="Logo" />
+      <ul>
+        <li><a href="./index.html">Number Generator</a></li>
+        <li><a href="./cookies.html">Cookies</a></li>
+      </ul>
     </header>
     <main>
-        <h1>Random Number Generator</h1>
-        <form action="">
-            <label for="number-range-check">
-                <input type="checkbox" name="number-range-check" id="number-range-selector" onchange="numRange();">
-                Number Range
-            </label>
-            <fieldset id="number-range-options" disabled="disabled">
-                <label for="number-range-lowest">
-                    Between
-                    <input type="number" name="number-range-lowest" id="number-range-lowest-input">
-                </label>
-                <label for="number-range-highest">
-                    and
-                    <input type="number" name="number-range-highest" id="number-range-highest-input">
-                </label>
-                <p id="number-range-error-display"></p>
-            </fieldset>
-            <label for="allow-decimals-check" id="decimals-label">
-                <input type="checkbox" name="allow-decimals-check" id="allow-decimals-selector" onchange="decimalAllowed();">
-                Allow Decimals
-            </label>
-            <fieldset id="allow-decimals-options" disabled="disabled">
-                <label for="decimal-places-selector">
-                    <input type="number" name="decimal-places-selector" id="decimal-places-input">
-                    Decimal Places
-                </label>
-                <p id="decimal-places-error-display"></p>
-            </fieldset>
-            <input type="button" value="Generate" onclick="generateNumber();">
-        </form>
-            <h2 id="number-store">Click 'Generate' to get started.</h2>
+      <h1>Random Number Generator</h1>
+      <form action="">
+        <label for="number-range-check">
+          <input
+            type="checkbox"
+            name="number-range-check"
+            id="number-range-selector"
+            onchange="numRange();"
+          />
+          Number Range
+        </label>
+        <fieldset id="number-range-options" disabled="disabled">
+          <label for="number-range-lowest">
+            Between
+            <input
+              type="number"
+              name="number-range-lowest"
+              id="number-range-lowest-input"
+              placeholder="1"
+              min="0"
+              max="49999999999"
+            />
+          </label>
+          <label for="number-range-highest">
+            and
+            <input
+              type="number"
+              name="number-range-highest"
+              id="number-range-highest-input"
+              placeholder="100"
+              min="1"
+              max="50000000000"
+            />
+          </label>
+          <p id="number-range-error-display"></p>
+        </fieldset>
+        <label for="allow-decimals-check" id="decimals-label">
+          <input
+            type="checkbox"
+            name="allow-decimals-check"
+            id="allow-decimals-selector"
+            onchange="decimalAllowed();"
+          />
+          Allow Decimals
+        </label>
+        <fieldset id="allow-decimals-options" disabled="disabled">
+          <label for="decimal-places-selector">
+            <input
+              type="number"
+              name="decimal-places-selector"
+              id="decimal-places-input"
+              placeholder="2"
+              min="1"
+              max="12"
+            />
+            Decimal Places
+          </label>
+          <p id="decimal-places-error-display"></p>
+        </fieldset>
+        <input type="button" value="Generate" onclick="generateNumber();" />
+      </form>
+      <h2 id="number-store">Click 'Generate' to get started.</h2>
     </main>
-</body>
+  </body>
 </html>
