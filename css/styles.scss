@@ -1,151 +1,134 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
-html,body{
-    position: relative;
-
-
+html,
+body {
+  position: relative;
 }
 
-a:link, a:visited{
-    text-decoration: none;
-    color:white;
+a:link,
+a:visited {
+  text-decoration: none;
+  color: white;
 }
-a:hover, a:active{
-    color:goldenrod;
+a:hover,
+a:active {
+  color: goldenrod;
 }
-body{
-    background: url('../img/design/vintage-wallpaper.png');
-    font-family: 'Open Sans', sans-serif;
-    color:white;
+body {
+  background: url("../img/design/vintage-wallpaper.png");
+  font-family: "Open Sans", sans-serif;
+  color: white;
 }
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header{
-    display: block;
-    min-height: 100px;
+main {
+  margin: 25px auto 15px;
+
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 470px;
+  width: 700px;
+
+  border: 1px solid white;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+  h1 {
+    margin: auto;
+    padding-top: 15px;
     width: 100%;
+    font-size: 28px;
+    color: white;
     text-align: center;
 
-    border-bottom:1px solid white;
+    //border:1px solid red;
+  }
 
-    img{
-        height: 80px;
-        margin: 0 auto;
+  h2 {
+    margin: auto;
+    padding-bottom: 25px;
+    width: 100%;
+
+    font-size: 26px;
+    text-align: center;
+
+    //border:1px solid orange;
+  }
+
+  form {
+    margin: auto;
+    padding: 15px;
+
+    //border:1px solid yellow;
+    * {
+      line-height: 30px;
     }
 
-    ul{
-        li{
-            text-decoration: none;
-            margin:5px 0;
+    fieldset {
+      min-height: 50px;
+      line-height: 50px;
 
-            &:last-of-type{
-                margin: 5px 0 10px;
-            }
-        }
+      border: 0;
     }
+  }
 }
 
-main{
-    margin: 25px auto 15px;
+input[type="button"] {
+  margin: 30px calc(50% - 110px);
+  height: 50px;
+  width: 220px;
 
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 470px;
-    width: 700px;
+  background: none;
+  color: white;
+  font-size: 20px;
 
-    border:1px solid white;
-    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  border: 3px solid white;
 
-    h1{
-        margin: auto;
-        padding-top: 15px;
-        width: 100%;
-        font-size: 28px;
-        color:white;
-        text-align: center;
-    
-        //border:1px solid red;
-    }
+  transition: 0.3s border ease;
 
-    h2{
-        margin: auto;
-        padding-bottom: 25px;
-        width:100%;
-
-        font-size: 26px;
-        text-align: center;
-
-        //border:1px solid orange;
-    }
-
-    form{
-        margin:auto;
-        padding:15px;
-
-        //border:1px solid yellow;
-        *{
-            line-height: 30px;
-        }
-
-        fieldset{
-            min-height: 50px;
-            line-height: 50px;
-
-            border:0;
-        }
-
-    }
+  &:hover {
+    border: 3px solid goldenrod;
+    cursor: pointer;
+  }
 }
 
-input[type=button]{
-    margin: 30px calc(50% - 110px);
-    height: 50px;
-    width:220px;
-
-    background: none;
-    color: white;
-    font-size: 20px;
-
-    border:3px solid white;
-
-    transition: 0.3s border ease;
-
-    &:hover{
-        border:3px solid goldenrod;
-        cursor: pointer;
-    }
+input:disabled {
+  background: rgba(125, 125, 125, 1);
+}
+input {
+  border: 1px solid white;
+  font-size: 16px;
 }
 
-input:disabled{
-    background:rgba(125,125,125,1);
-}
-input{
-    border:1px solid white;
-    font-size: 16px;
+#decimals-label,
+#allow-decimals-options {
+  opacity: 1;
 }
 
-#decimals-label, #allow-decimals-options{
-    opacity: 1;
+#number-range-error-display,
+#decimal-places-error-display {
+  color: red;
+  opacity: 1;
+  height: 45px;
+  margin: 2px 0;
+  padding: 2px 0;
+  line-height: 16px;
 }
 
-#number-range-error-display, #decimal-places-error-display{
-    color:red;
-    opacity: 1;
-    height: 45px;
-    margin: 2px 0;
-    padding: 2px 0;
-    line-height: 16px;
+@media screen and (max-width: 700px) {
+  main {
+    width: auto;
+    border: none;
+  }
+  label {
+    display: inline-block;
+  }
+
+  #number-range-options {
+    height: 190px;
+  }
 }
 
-@media screen and (max-width:700px){
-    main{
-        width:auto;
-        border:none;
-    }
-    label{
-        display:inline-block;
-    }
-}
+@import "header";

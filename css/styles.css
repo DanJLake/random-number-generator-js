@@ -1,48 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
-html, body {
+html,
+body {
   position: relative;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: white;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   color: goldenrod;
 }
 
 body {
   background: url("../img/design/vintage-wallpaper.png");
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: white;
 }
 
 * {
   margin: 0;
   padding: 0;
-}
-
-header {
-  display: block;
-  min-height: 100px;
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid white;
-}
-
-header img {
-  height: 80px;
-  margin: 0 auto;
-}
-
-header ul li {
-  text-decoration: none;
-  margin: 5px 0;
-}
-
-header ul li:last-of-type {
-  margin: 5px 0 10px;
 }
 
 main {
@@ -91,7 +72,7 @@ main form fieldset {
   border: 0;
 }
 
-input[type=button] {
+input[type="button"] {
   margin: 30px calc(50% - 110px);
   height: 50px;
   width: 220px;
@@ -103,7 +84,7 @@ input[type=button] {
   transition: 0.3s border ease;
 }
 
-input[type=button]:hover {
+input[type="button"]:hover {
   border: 3px solid goldenrod;
   cursor: pointer;
 }
@@ -117,11 +98,13 @@ input {
   font-size: 16px;
 }
 
-#decimals-label, #allow-decimals-options {
+#decimals-label,
+#allow-decimals-options {
   opacity: 1;
 }
 
-#number-range-error-display, #decimal-places-error-display {
+#number-range-error-display,
+#decimal-places-error-display {
   color: red;
   opacity: 1;
   height: 45px;
@@ -138,5 +121,30 @@ input {
   label {
     display: inline-block;
   }
+  #number-range-options {
+    height: 190px;
+  }
+}
+
+header {
+  display: block;
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
+
+header img {
+  height: 80px;
+  margin: 0 auto;
+}
+
+header ul li {
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+header ul li:last-of-type {
+  margin: 5px 0 10px;
 }
 /*# sourceMappingURL=styles.css.map */
