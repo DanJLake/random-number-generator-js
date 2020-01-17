@@ -129,4 +129,14 @@ input {
   padding: 2px 0;
   line-height: 16px;
 }
+
+@media screen and (max-width: 700px) {
+  main {
+    width: auto;
+    border: none;
+  }
+  label {
+    display: inline-block;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

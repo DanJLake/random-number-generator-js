@@ -57,3 +57,10 @@ main{
         margin-top:15px;
     }
 }
+
+@media screen and (max-width:800px){
+    main{
+        width:calc(100% - 10px);
+        padding:5px;
+    }
+}
