@@ -93,6 +93,21 @@ function generateNumber() {
   }
 }
 
+function generatePin() {
+  const numStore = document.getElementById("number-store");
+  let max = 1000;
+  let min = 9999;
+
+  let randomNumber = Math.floor(Math.random() * (max - min) + min);
+  let numberchance = Math.random();
+
+  if (numberchance >= 0.5) {
+    randomNumber++;
+  }
+
+  document.getElementById("number-store").innerHTML = randomNumber;
+}
+
 function predefinedValues() {
   document.getElementById("decimal-places-input").value = 2;
   document.getElementById("number-range-highest-input").value = 100;
