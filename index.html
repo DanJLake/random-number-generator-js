@@ -25,6 +25,7 @@
     />
 
     <script src="js/generator.min.js"></script>
+    <script src="js/theme-changer.min.js"></script>
     <script
       data-ad-client="ca-pub-3909897055849045"
       async
@@ -41,7 +42,7 @@
 
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body onload="predefinedValues();">
+  <body onload="predefinedValues();" class="vintage-wallpaper">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
@@ -53,7 +54,7 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
-      <img src="./img/james-no-cap.png" alt="Logo" />
+      <img src="./img/rng-white.png" alt="Logo" id="logo" />
       <ul>
         <li><a href="./">Number Generator</a></li>
         <li><a href="./pin-generator">PIN Generator</a></li>
@@ -124,5 +125,52 @@
       </form>
       <h2 id="number-store">Click 'Generate' to get started.</h2>
     </main>
+    <article>
+      <h2>How to use</h2>
+      <p>
+        To generate a random number between 0 and 100 just click ‘Generate’.
+        There are also options that allow you to generate a number between any two numbers, and a decimal number with any number of decimal places.
+      </p>
+      <h2>About random number generation</h2>
+      <p>
+        Generating random numbers has always been a challenge for developers, in the past various methods of generation have been used however these all have a degree of non-randomness to them, 
+        whether that be using a seed value based on the time and date, linear recurrence in binary or several other methods.
+      </p>
+      <p>
+        The method deemed the most random is currently measuring atmospheric noise and calculating a value based on this, however even this is changed by real world variables, 
+        meaning it is not truly random, the recurring theme for developers trying to generate completely random numbers.
+      </p>
+      <p>
+        New methods are currently being researched to improve the unpredictability of these generators, Intel are currently researching a method of random number generation based on 
+        fluctuations in voltage and temperature inside a chip, this would likely be just as random as the atmospheric noise measurements due to the fact each chip’s reading at any 
+        given moment would be unique, there is no way to know a chips exact voltage and temperature at any given millisecond and two identical chips would likely produce different 
+        readings even if they were given the same command at the exact same time.
+      </p>
+      <p>
+        This site generates random numbers by taking a number generated based on a time/date seed and changing the number based on other random factors to increase the randomness of the number.
+      </p>
+      <h2>Why is true randomness so important?</h2>
+      <p>
+        To most people, there would be no difference between a pseudo random number (A seemingly random number, however it could be reproduced in the original conditions) and a true random number, 
+        they are both calculated based on events or factors that repeat irregularly and immeasurably. For some though, it is important a ‘random’ number cannot be predicted ahead of time, 
+        this could be for a lottery, cryptography, a game or any reason that feels important to the person. Knowledge of the way a pseudo random number is generated will allow a malicious actor 
+        to either manipulate the number or successfully calculate/predict it. This would obviously be a problem for both cryptography and a lottery, imagine a jackpot being won due to the 
+        winning numbers being calculated beforehand with an algorithm, or a hacker being able to decrypt a website’s passwords due to knowing how to calculate the encryption key!
+      </p>
+      <h2>Should I really use randomly generated PINs/Passcodes?</h2>
+      <p>
+        Yes. People are predictable. Many might use a memorable date, others an easily memorized sequence, a code they use everywhere or even the dreaded ‘0000’ or ‘1234’. 
+        The problem is these are easily guessed by anyone who makes a conscious effort to try and crack the code. When it comes to security, dropping those predictable patterns is 
+        the only way to fully secure your account or device.
+      </p>
+    </article>
+
+    <div id="background-picker-container">
+      <img src="img/design/backgrounds/vintage-wallpaper.png" alt="" onclick="changeTheme('vintage-wallpaper');">
+      <img src="img/design/backgrounds/repeated-square-dark.png" alt="" onclick="changeTheme('repeated-square-dark');">
+      <img src="img/design/backgrounds/repeated-square.png" alt="" onclick="changeTheme('repeated-square');">
+      <img src="img/design/backgrounds/blue-snow.png" alt="" onclick="changeTheme('blue-snow');">
+      <img src="img/design/backgrounds/cork-board.png" alt="" onclick="changeTheme('cork-board');">
+    </div>
   </body>
 </html>

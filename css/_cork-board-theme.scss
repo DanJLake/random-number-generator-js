@@ -1,0 +1,52 @@
+body{
+    &.cork-board{
+        background: url("../img/design/backgrounds/cork-board.png");
+        color:rgba(250,250,250,1);
+    
+        header{
+          border-bottom:1px solid rgba(250,250,250,1);
+          background: url(../img/design/backgrounds/lined-paper.png);
+          background-color: rgba(250,250,250,1);
+    
+          color: rgba(25,25,25,1);
+        }
+    
+        main{
+          border:1px solid rgba(250,250,250,1);
+          background: yellow;
+          color:royalblue;
+          background-size: 80%;
+          overflow: visible;
+          transition: 1s all ease;
+          transform: rotate(355deg);
+    
+          input[type="button"] {
+            border:3px solid royalblue;
+            color:royalblue;
+    
+            transition: 0s;
+    
+            &:hover{
+              border:3px solid rgba(25,25,25,1);
+              color: rgba(25,25,25,1);
+            }
+          }
+        }
+    
+        article{
+          background: url(../img/design/backgrounds/lined-paper.png);
+          background-color: rgba(250,250,250,1);
+          color:rgba(25,25,25,1);
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+  body{
+    &.cork-board{
+      main{
+        transform: rotate(0deg);
+      }
+    }
+  }
+}

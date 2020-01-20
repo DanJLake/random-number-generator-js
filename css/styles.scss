@@ -8,16 +8,17 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color: white;
+  color: inherit;
 }
 a:hover,
 a:active {
   color: goldenrod;
 }
 body {
-  background: url("../img/design/vintage-wallpaper.png");
   font-family: "Open Sans", sans-serif;
   color: white;
+
+  transition: 1s background ease;
 }
 * {
   margin: 0;
@@ -32,7 +33,6 @@ main {
   min-height: 470px;
   width: 700px;
 
-  border: 1px solid white;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 
   h1 {
@@ -40,7 +40,6 @@ main {
     padding-top: 15px;
     width: 100%;
     font-size: 28px;
-    color: white;
     text-align: center;
 
     //border:1px solid red;
@@ -81,15 +80,11 @@ input[type="button"] {
   width: 220px;
 
   background: none;
-  color: white;
   font-size: 20px;
 
-  border: 3px solid white;
-
-  transition: 0.3s border ease;
+  transition: 0.3s all ease;
 
   &:hover {
-    border: 3px solid goldenrod;
     cursor: pointer;
   }
 }
@@ -117,6 +112,53 @@ input {
   line-height: 16px;
 }
 
+article{
+  margin: 0 auto 50px;
+  padding: 5px;
+  width: 960px;
+
+  border:1px solid rgba(250,250,250,1);
+
+  h2{
+    margin: 15px 0 5px;
+
+    &:first-of-type{
+      margin: 0 0 5px;
+    }
+  }
+}
+
+#background-picker-container{
+  position: absolute;
+  top:5px;
+  right:5px;
+
+  margin:0;
+  padding:8px 10px 6px;
+
+  width:140px;
+  border:0;
+
+  border-radius: 50px;
+  background: rgba(125,125,125,0.3);
+
+
+  cursor: pointer;
+
+  img{
+    height: 20px;
+    width: 20px;
+
+    border:2px solid white;
+
+    border-radius: 50px;
+
+    &:hover{
+      border:2px solid goldenrod;
+    }
+  }
+}
+
 @media screen and (max-width: 700px) {
   main {
     width: auto;
@@ -129,6 +171,40 @@ input {
   #number-range-options {
     height: 190px;
   }
+
+  #background-picker-container{
+    position: relative;
+    bottom:15px;
+    left:calc(50% - 100px);
+    top:auto;
+    right:auto;
+    padding:25px 20px 25px 20px;
+
+    img{
+      height:40px;
+      width:40px;
+    }
+  }
+
+  body{
+    &.cork-board{
+      main{
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  article{
+    width:calc(100% - 6px);
+    padding:2px;
+    margin-bottom:25px;
+  }
 }
 
 @import "header";
+@import "vintage-wallpaper-theme";
+@import "repeated-square-theme";
+@import "repeated-square-dark-theme";
+@import "blue-snow-theme";
+@import "cork-board-theme";
+
