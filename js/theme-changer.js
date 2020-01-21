@@ -1,4 +1,5 @@
 function changeTheme(themeReq){
+    themeReq = themeReq.replace(/"/g, '');
     document.getElementsByTagName('body')[0].className = themeReq;
 
     if (themeReq == 'vintage-wallpaper') {
@@ -16,7 +17,7 @@ function changeTheme(themeReq){
     }
 
     if (themeReq) {
-        createCookie('theme', themeReq.replace('"', '').replace('\\').replace('"', '')); //TRIM
+        createCookie('theme', themeReq); //TRIM
     }
 }
 
@@ -24,6 +25,8 @@ function initTheme(){
     let now = new Date();
     let time = now.getTime();
     let expireTime = time + 1000*60;
+
+    let initialTheme = readCookie('theme');
 
     changeTheme(readCookie('theme'));
 }
