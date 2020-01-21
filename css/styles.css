@@ -140,7 +140,9 @@ article h2:first-of-type {
 #background-picker-container img {
   height: 20px;
   width: 20px;
-  border: 2px solid white;
+  border: 2.5px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 50px;
 }
 

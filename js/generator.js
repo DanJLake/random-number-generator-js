@@ -109,7 +109,13 @@ function generatePin() {
 }
 
 function predefinedValues() {
-  document.getElementById("decimal-places-input").value = 2;
-  document.getElementById("number-range-highest-input").value = 100;
-  document.getElementById("number-range-lowest-input").value = 1;
+  if (document.getElementById("decimal-places-input")) {
+    document.getElementById("decimal-places-input").value = 2;
+  }
+  if (document.getElementById("number-range-highest-input")) {
+    document.getElementById("number-range-highest-input").value = 100;
+  }
+  if (document.getElementById("number-range-lowest-input")) {
+    document.getElementById("number-range-lowest-input").value = 1;
+  }
 }

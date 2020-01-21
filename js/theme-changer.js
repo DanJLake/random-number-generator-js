@@ -29,7 +29,7 @@ function initTheme(){
     let initialTheme = readCookie('theme');
 
     if (readCookie('theme')) {
-        changeTheme(readCookie('theme'));
+        changeTheme(readCookie('theme').replace(/"/g, ''));
     }
     else{
         changeTheme('vintage-wallpaper');
