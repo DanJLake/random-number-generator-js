@@ -16,7 +16,7 @@ function changeTheme(themeReq){
     }
 
     if (themeReq) {
-        createCookie('theme', themeReq).replace('"', ''); //TRIM
+        createCookie('theme', themeReq.replace('"', '')); //TRIM
     }
 }
 
