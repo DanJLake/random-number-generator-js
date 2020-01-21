@@ -130,7 +130,7 @@ article h2:first-of-type {
   right: 5px;
   margin: 0;
   padding: 8px 10px 6px;
-  width: 140px;
+  width: 118px;
   border: 0;
   border-radius: 50px;
   background: rgba(125, 125, 125, 0.3);
@@ -348,5 +348,28 @@ body.cork-board article {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
+}
+
+body.halftone-yellow {
+  background: url("../img/design/backgrounds/halftone-yellow.png");
+  color: red;
+}
+
+body.halftone-yellow header {
+  border-bottom: 1px solid red;
+}
+
+body.halftone-yellow main {
+  border: 1px solid red;
+}
+
+body.halftone-yellow main input[type="button"] {
+  border: 3px solid red;
+  color: red;
+}
+
+body.halftone-yellow main input[type="button"]:hover {
+  border: 3px solid royalblue;
+  color: royalblue;
 }
 /*# sourceMappingURL=styles.css.map */

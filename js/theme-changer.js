@@ -11,6 +11,9 @@ function changeTheme(themeReq){
     else if (themeReq == 'repeated-square' || themeReq == 'cork-board' || themeReq == 'blue-snow'){
         document.getElementById('logo').src = './img/rng-black.png';
     }
+    else if (themeReq == 'halftone-yellow'){
+        document.getElementById('logo').src = './img/rng-red.png';
+    }
     else{
         document.getElementsByTagName('body')[0].className = 'vintage-wallpaper';
         document.getElementById('logo').src = './img/rng-white.png';

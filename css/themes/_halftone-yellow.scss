@@ -1,0 +1,24 @@
+body{
+    &.halftone-yellow{
+        background: url("../img/design/backgrounds/halftone-yellow.png");
+        color:red;
+    
+        header{
+          border-bottom:1px solid red;
+        }
+    
+        main{
+          border:1px solid red;
+    
+          input[type="button"] {
+            border:3px solid red;
+            color:red;
+    
+            &:hover{
+              border:3px solid royalblue;
+              color:royalblue;
+            }
+          }
+        }
+      }
+}
