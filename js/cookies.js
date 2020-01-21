@@ -21,7 +21,7 @@ function readCookie(name){
     for (var i=0; i<cookieArray.length; i++){
         console.log('cookieArray ' + i + 'th name = ' + cookieArray[i].split('=')[0] + ' value = ' + cookieArray[i].split('=')[1]);
         console.log('Attempting to match with ' + name);
-        if (name.toString == cookieArray[i].split('='[0]).toString){
+        if (name == cookieArray[i].split('=')[0]){
             console.log('cookie' + name + ' : value = ' + value);
             foundMatch = true;
             return cookieArray[i].split('=')[1];
