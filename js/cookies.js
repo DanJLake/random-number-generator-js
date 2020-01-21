@@ -13,12 +13,14 @@ function deleteCookie(name){
 
 function readCookie(name){
     let allCookies = document.cookie;
+    console.log(allCookies);
     cookieArray = allCookies.split(';');
     let foundMatch = false;
 
     for (var i=0; i<cookieArray.length; i++){
         if (name == cookieArray[i].split('='[0])){
             value = cookieArray[i].split('=')[1];
+            console.log('cookie' + name + 'value = ' + value);
             return value;
         }
     }
