@@ -22,10 +22,9 @@ function readCookie(name){
         console.log('cookieArray ' + i + 'th name = ' + cookieArray[i].split('=')[0] + ' value = ' + cookieArray[i].split('=')[1]);
         console.log('Attempting to match with ' + name);
         if (name == cookieArray[i].split('='[0])){
-            let value = cookieArray[i].split('=')[1];
             console.log('cookie' + name + ' : value = ' + value);
             foundMatch = true;
-            return value;
+            return cookieArray[i].split('=')[1];
         }
         else{
             console.log('No match or value found for cookie named ' + name);
