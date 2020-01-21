@@ -1,6 +1,8 @@
 function createCookie(name, value){
+    let today = new Date();
+    today = today.getUTCDate();
     let cookie = [
-        name, '=', JSON.stringify(value), '; domain=', window.location.host.toString(), '; path=/;'
+        name, '=', JSON.stringify(value), '; expires=', expiryDate, '; domain=', window.location.host.toString(), '; path=/;'
     ].join('');
     document.cookie = cookie;
 }
@@ -39,4 +41,12 @@ function listCookies(){
         value = cookieArray[i].split('=')[1];
         alert("Cookie " + name + " value = " + value);
     }
+}
+
+function setExpiryDate(){
+    let expiryDate = new Date;
+        
+        expiryDate.setMonth(expiryDate.getMonth() + 1);
+
+        return expiryDate;
 }
