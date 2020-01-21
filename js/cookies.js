@@ -13,7 +13,7 @@ function deleteCookie(name){
 
 function readCookie(name){
     let allCookies = document.cookie;
-    console.log(allCookies);
+    console.log('ALL COOKIES = ' + allCookies);
     cookieArray = allCookies.split(';');
     let foundMatch = false;
 
