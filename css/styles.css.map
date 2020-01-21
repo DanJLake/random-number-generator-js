@@ -4,11 +4,11 @@
     "sources": [
         "styles.scss",
         "_header.scss",
-        "_vintage-wallpaper-theme.scss",
-        "_repeated-square-theme.scss",
-        "_repeated-square-dark-theme.scss",
-        "_blue-snow-theme.scss",
-        "_cork-board-theme.scss"
+        "themes/_vintage-wallpaper-theme.scss",
+        "themes/_repeated-square-theme.scss",
+        "themes/_repeated-square-dark-theme.scss",
+        "themes/_blue-snow-theme.scss",
+        "themes/_cork-board-theme.scss"
     ],
     "names": [],
     "file": "styles.css"

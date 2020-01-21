@@ -10,4 +10,9 @@ function changeTheme(themeReq){
     else if (themeReq == 'repeated-square' || themeReq == 'cork-board' || themeReq == 'blue-snow'){
         document.getElementById('logo').src = './img/rng-black.png';
     }
+    createCookie('theme', themeReq);
+}
+
+function initTheme(){
+    
 }

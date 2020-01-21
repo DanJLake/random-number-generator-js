@@ -25,7 +25,8 @@
     />
 
     <script src="js/generator.min.js"></script>
-    <script src="js/theme-changer.min.js"></script>
+    <script src="js/theme-changer.js"></script>
+    <script src="js/cookies.js"></script>
     <script
       data-ad-client="ca-pub-3909897055849045"
       async
@@ -41,8 +42,15 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+
+    <script>
+      function start(){
+        predefinedValues();
+        initTheme();
+      }
+    </script>
   </head>
-  <body onload="predefinedValues();" class="vintage-wallpaper">
+  <body onload="start();" class="vintage-wallpaper">
     <!-- Google Tag Manager (noscript) -->
     <noscript
       ><iframe
