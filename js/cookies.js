@@ -15,13 +15,18 @@ function readCookie(name){
     let allCookies = document.cookie;
     console.log('ALL COOKIES = ' + allCookies);
     cookieArray = allCookies.split(';');
+    console.log('cookieArray = ' + cookieArray);
     let foundMatch = false;
 
     for (var i=0; i<cookieArray.length; i++){
         if (name == cookieArray[i].split('='[0])){
             value = cookieArray[i].split('=')[1];
-            console.log('cookie' + name + 'value = ' + value);
+            console.log('cookie' + name + ' : value = ' + value);
+            foundMatch = true;
             return value;
+        }
+        else{
+            console.log('No match or value found for cookie named ' + name);
         }
     }
 }
