@@ -3,23 +3,20 @@ function changeTheme(themeReq){
 
     if (themeReq == 'vintage-wallpaper') {
         document.getElementById('logo').src = './img/rng-white.png';
-        createCookie('theme', themeReq);
     }
     else if (themeReq == 'repeated-square-dark') {
         document.getElementById('logo').src = './img/rng-green.png';
-        createCookie('theme', themeReq);
     }
     else if (themeReq == 'repeated-square' || themeReq == 'cork-board' || themeReq == 'blue-snow'){
         document.getElementById('logo').src = './img/rng-black.png';
-        createCookie('theme', themeReq);
     }
     else{
         document.getElementsByTagName('body')[0].className = 'vintage-wallpaper';
         document.getElementById('logo').src = './img/rng-white.png';
-        createCookie('theme', themeReq);
     }
 
     if (themeReq) {
+        createCookie('theme', themeReq).replace('"', ''); //TRIM
     }
 }
 
