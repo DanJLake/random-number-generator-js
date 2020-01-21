@@ -26,5 +26,5 @@ function initTheme(){
     let expireTime = time + 1000*60;
 
     
-    changeTheme(readCookie('"theme"'));
+    changeTheme(readCookie('theme'));
 }
