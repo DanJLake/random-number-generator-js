@@ -16,7 +16,7 @@ a:active {
 }
 
 body {
-  background: url("../img/design/vintage-wallpaper.png");
+  background: url("../img/design/backgrounds/vintage-wallpaper.png");
   font-family: "Open Sans", sans-serif;
   color: white;
 }
@@ -66,5 +66,149 @@ header ul li {
 
 header ul li:last-of-type {
   margin: 5px 0 10px;
+}
+
+body.vintage-wallpaper {
+  background: url("../img/design/backgrounds/vintage-wallpaper.png");
+}
+
+body.vintage-wallpaper header {
+  border-bottom: 1px solid #fafafa;
+}
+
+body.vintage-wallpaper main {
+  border: 1px solid #fafafa;
+}
+
+body.vintage-wallpaper main input[type="button"] {
+  border: 3px solid #fafafa;
+  color: #fafafa;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+body.vintage-wallpaper main input[type="button"]:hover {
+  border: 3px solid goldenrod;
+  color: goldenrod;
+}
+
+body.repeated-square {
+  background: url("../img/design/backgrounds/repeated-square.png");
+  color: #191919;
+}
+
+body.repeated-square header {
+  border-bottom: 1px solid black;
+}
+
+body.repeated-square main {
+  border: 1px solid #7d7d7d;
+}
+
+body.repeated-square main input[type="button"] {
+  border: 3px solid #191919;
+  color: #191919;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+body.repeated-square main input[type="button"]:hover {
+  border: 3px solid orangered;
+  color: orangered;
+}
+
+body.repeated-square-dark {
+  background: url("../img/design/backgrounds/repeated-square-dark.png");
+  color: lime;
+}
+
+body.repeated-square-dark header {
+  border-bottom: 1px solid lime;
+}
+
+body.repeated-square-dark main {
+  border: 1px solid lime;
+}
+
+body.repeated-square-dark main input[type="button"] {
+  border: 3px solid lime;
+  color: lime;
+}
+
+body.repeated-square-dark main input[type="button"]:hover {
+  border: 3px solid white;
+  color: white;
+}
+
+body.blue-snow {
+  background: url("../img/design/backgrounds/blue-snow.png");
+  color: #191919;
+}
+
+body.blue-snow header {
+  border-bottom: 1px solid #191919;
+}
+
+body.blue-snow main {
+  border: 1px solid #191919;
+}
+
+body.blue-snow main input[type="button"] {
+  border: 3px solid #191919;
+  color: #191919;
+}
+
+body.blue-snow main input[type="button"]:hover {
+  border: 3px solid royalblue;
+  color: royalblue;
+}
+
+body.cork-board {
+  background: url("../img/design/backgrounds/cork-board.png");
+  color: #fafafa;
+}
+
+body.cork-board header {
+  border-bottom: 1px solid #fafafa;
+  background: url(../img/design/backgrounds/lined-paper.png);
+  background-color: #fafafa;
+  color: #191919;
+}
+
+body.cork-board main {
+  border: 1px solid #fafafa;
+  background: yellow;
+  color: royalblue;
+  background-size: 80%;
+  overflow: visible;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+  -webkit-transform: rotate(355deg);
+          transform: rotate(355deg);
+}
+
+body.cork-board main input[type="button"] {
+  border: 3px solid royalblue;
+  color: royalblue;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+body.cork-board main input[type="button"]:hover {
+  border: 3px solid #191919;
+  color: #191919;
+}
+
+body.cork-board article {
+  background: url(../img/design/backgrounds/lined-paper.png);
+  background-color: #fafafa;
+  color: #191919;
+}
+
+@media screen and (max-width: 700px) {
+  body.cork-board main {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
 }
 /*# sourceMappingURL=cookies.css.map */

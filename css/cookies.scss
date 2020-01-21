@@ -15,7 +15,7 @@ a:active {
   color: goldenrod;
 }
 body {
-  background: url("../img/design/vintage-wallpaper.png");
+  background: url("../img/design/backgrounds/vintage-wallpaper.png");
   font-family: "Open Sans", sans-serif;
   color: white;
 }
@@ -26,7 +26,6 @@ body {
 
 main {
   margin: 25px auto;
-
   width: 800px;
 
   p {
@@ -46,3 +45,8 @@ main {
 }
 
 @import "header";
+@import "themes/vintage-wallpaper-theme";
+@import "themes/repeated-square-theme";
+@import "themes/repeated-square-dark-theme";
+@import "themes/blue-snow-theme";
+@import "themes/cork-board-theme";

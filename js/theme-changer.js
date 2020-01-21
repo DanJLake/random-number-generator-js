@@ -14,7 +14,10 @@ function changeTheme(themeReq){
         document.getElementsByTagName('body')[0].className = 'vintage-wallpaper';
         document.getElementById('logo').src = './img/rng-white.png';
     }
-    createCookie('theme', themeReq);
+
+    if (themeReq) {
+        createCookie('theme', themeReq);
+    }
 }
 
 function initTheme(){
