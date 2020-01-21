@@ -19,6 +19,7 @@ function readCookie(name){
     let foundMatch = false;
 
     for (var i=0; i<cookieArray.length; i++){
+        console.log('cookieArray ' + i + 'th name = ' + cookieArray[i].split('=')[0] + 'value = ' + cookieArray[i].split('=')[1]);
         if (name == cookieArray[i].split('='[0])){
             value = cookieArray[i].split('=')[1];
             console.log('cookie' + name + ' : value = ' + value);
