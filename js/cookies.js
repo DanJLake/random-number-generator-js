@@ -2,7 +2,7 @@ function createCookie(name, value){
     let today = new Date();
     today = today.getUTCDate();
     let cookie = [
-        name, '=', JSON.stringify(value), '; expires=', expiryDate, '; domain=', window.location.host.toString(), '; path=/;'
+        name, '=', JSON.stringify(value), '; expires=', setExpiryDate(), '; domain=', window.location.host.toString(), '; path=/;'
     ].join('');
     document.cookie = cookie;
 }
