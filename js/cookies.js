@@ -14,6 +14,19 @@ function deleteCookie(name){
 function readCookie(name){
     let allCookies = document.cookie;
     cookieArray = allCookies.split(';');
+    let foundMatch = false;
+
+    for (var i=0; i<cookieArray.length; i++){
+        if (name == cookieArray[i].split('='[0])){
+            value = cookieArray[i].split('=')[1];
+            return value;
+        }
+    }
+}
+
+function listCookies(){
+    let allCookies = document.cookie;
+    cookieArray = allCookies.split(';');
 
     for (var i=0; i<cookieArray.length; i++){
         name = cookieArray[i].split('=')[0];

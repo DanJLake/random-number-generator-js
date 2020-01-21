@@ -10,9 +10,18 @@ function changeTheme(themeReq){
     else if (themeReq == 'repeated-square' || themeReq == 'cork-board' || themeReq == 'blue-snow'){
         document.getElementById('logo').src = './img/rng-black.png';
     }
+    else{
+        document.getElementsByTagName('body')[0].className = 'vintage-wallpaper';
+        document.getElementById('logo').src = './img/rng-white.png';
+    }
     createCookie('theme', themeReq);
 }
 
 function initTheme(){
+    let now = new Date();
+    let time = now.getTime();
+    let expireTime = time + 1000*60;
+
     
+    changeTheme(readCookie('theme'));
 }
