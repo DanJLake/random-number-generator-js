@@ -28,5 +28,10 @@ function initTheme(){
 
     let initialTheme = readCookie('theme');
 
-    changeTheme(readCookie('theme'));
+    if (readCookie('theme')) {
+        changeTheme(readCookie('theme'));
+    }
+    else{
+        changeTheme('vintage-wallpaper');
+    }
 }
